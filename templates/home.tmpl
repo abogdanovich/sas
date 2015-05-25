@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <title>smart mini server</title>
+  <head></head>
+  <body>
+  
+  <br />
+    <div>
+      <h2>All devices</h2>
+      <table border="2">
+        <tr><td>device id</td><td>Device type</td><td>Values</td></tr>
+        {% for item in devices %}
+          <tr><td>{{ item['device_id'] }}</td><td>{{ item['device_type'] }}</td><td>{{ item['values'] }}</td></tr>
+        {% endfor %}
+      </table>
+  
+    </div>
+  </body>
+</html>
